@@ -5,12 +5,14 @@ import PrecoDoPao from './components/ContainerPreco';
 import HelloWorld from './components/HelloWorld';
 
 import './components/CardProduto.css';
+import Evento from './components/Evento';
+import Formulario from './components/Formulario';
 
 function App() {
   return (
     <div className="App">
       <HelloWorld />
-      
+
       <CardFalaNome />
 
       <PrecoDoPao />
@@ -21,6 +23,10 @@ function App() {
         descricaoDoProduto="Cupcake imagem"
         urlImagemProduto="https://img.freepik.com/vetores-gratis/cupcake-vetorizado-coberto-com-sobreposicao-de-adesivo-de-cereja-maraschino-com-uma-borda-branca_53876-170386.jpg?t=st=1695735486~exp=1695736086~hmac=2cef72cb91c0448c2083e1923bb4c936a568f246460e179a7d20541ece79d038"
       />
+
+      <Evento numero={10}/>
+
+      <Formulario />
     </div>
   )
 }

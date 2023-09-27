@@ -4,7 +4,7 @@ function CardProdutoPadaria({nomeDoProduto, preco, urlImagemProduto, descricaoIm
     return (
         <>
             <div className={stylesProduto}>
-                <div class="card">
+                <div className="card">
                     <img src={urlImagemProduto}
                         alt={descricaoImagem}
                         height="200px"
