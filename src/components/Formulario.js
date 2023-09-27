@@ -6,13 +6,13 @@ function Formulario() {
             Mesmo após o cadastro e mesmo depois de clicar no botão
             o que está escrito no nosso input continua por lá
         */
-       console.log(name)
+        console.log(`${name} : ${password}`)
         event.preventDefault();
         console.log("Cadastrou usuário")
     }
 
-    const [name, setName] = useState("");
-    const [password, setpassword] = useState("")
+    const [name, setName] = useState();
+    const [password, setpassword] = useState();
 
     return (
         <div>
@@ -25,7 +25,6 @@ function Formulario() {
                         name="name"
                         placeholder="Digite seu nome"
                         onChange={(e) => setName(e.target.value)}
-                        value={name}
                     />
                 </div>
 
@@ -36,6 +35,7 @@ function Formulario() {
                         id="password"
                         name="password"
                         placeholder="Digite sua senha"
+                        onChange={(e) => setpassword(e.target.value)}
                     />
                 </div>
 

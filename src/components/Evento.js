@@ -1,17 +1,30 @@
 import PropType from "prop-types";
+import Button from "./evento/Button";
 
-function Evento({ numero }) {
+function Evento() {
     function meuEvento() {
-        console.log("Olá mundo");
-        alert(`${numero}`);
+        console.log("ativando o primeiro evento");
     }
+
+    function meuSegundoEvento() {
+        console.log("ativando o segundo evento");
+    }
+
     return (
         <div>
             <h3>
                 Clique para despara meu evento
             </h3>
 
-            <button onClick={meuEvento}>apenas clique</button>
+            <Button
+                event={meuEvento}
+                text="primeiro evento"
+            />
+
+            <Button
+                event={meuSegundoEvento}
+                text="segundo evento"
+            />
         </div>
     );
 }
