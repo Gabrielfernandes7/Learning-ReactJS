@@ -1,10 +1,14 @@
 import './App.css';
+import { useState } from 'react';
 import CardProdutoPadaria from './components/CardProdutoComponente/CardProduto';
 import HelloWorld from './components/HelloWorld';
 import Condicional from "./components/Condicional";
 import OutraLista from './components/OutraLista';
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App() {
+  const [name, setName] = useState();
   const meusItem = [];
 
   return (
@@ -30,6 +34,10 @@ function App() {
 
       <h1>Renderização de listas</h1>
       <OutraLista itens={meusItem} />
+
+      <h1>State lift</h1>
+      <SeuNome setName={setName}/>
+      <Saudacao name={name}/>
 
     </div>
   )
