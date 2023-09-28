@@ -2,7 +2,8 @@ import PropType from "prop-types";
 import Button from "./evento/Button";
 
 function Evento() {
-    function meuEvento() {
+    
+    const meuEvento = () => {
         console.log("ativando o primeiro evento");
     }
 
