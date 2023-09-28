@@ -1,9 +1,12 @@
 import './App.css';
-import CardProdutoPadaria from './components/CardProduto';
+import CardProdutoPadaria from './components/CardProdutoComponente/CardProduto';
 import HelloWorld from './components/HelloWorld';
-import Condicional from "./components/Condicional.1";
+import Condicional from "./components/Condicional";
+import OutraLista from './components/OutraLista';
 
 function App() {
+  const meusItem = [];
+
   return (
     <div className="App">
       <HelloWorld />
@@ -24,6 +27,10 @@ function App() {
 
       <h1>Renderização condicional</h1>
       <Condicional />
+
+      <h1>Renderização de listas</h1>
+      <OutraLista itens={meusItem} />
+
     </div>
   )
 }

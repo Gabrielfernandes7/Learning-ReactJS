@@ -1,5 +1,5 @@
 import PropType from 'prop-types';
-import stylesProduto from "../components/CardProduto.css";
+import stylesProduto from "../CardProdutoComponente/CardProduto.css"
 function CardProdutoPadaria({nomeDoProduto, preco, urlImagemProduto, descricaoImagem}) {
     return (
         <>
